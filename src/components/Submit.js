@@ -22,7 +22,7 @@ const Submit = () => {
          <div className="label2">   <h1>submit to us</h1> </div>
             <form onSubmit={handleSubmit}>
 			<div>
-        <label htmlFor="title">title: 		</label>
+        <label htmlFor="title">	</label>
         <input
           type="text"
           id="title"
@@ -33,7 +33,7 @@ const Submit = () => {
         />
       </div>
 	  		<div>
-        <label htmlFor="name">name: 		</label>
+        <label htmlFor="name">		</label>
         <input
           type="text"
           id="title"
@@ -44,7 +44,7 @@ const Submit = () => {
         />
       </div>
       <div>
-        <label htmlFor="essay">piece:		</label>
+        <label htmlFor="essay"></label>
         <textarea
           id="essay"
 		  placeholder="your piece here..."
