@@ -109,17 +109,26 @@ Every time I look back at my childhood and think of the anxious and scared kid, 
         `,
     },{
         id: 4,
-        title: "Essay four",
+        title: "mean professors ",
 				    image: "images/stones.png", // Replace with the actual image path
 
         content: `
-            This is the first paragraph of Essay Two. It contains different introductory text.
+            2018. Third year of Computer Engineering. 
 
-            This is the second paragraph of Essay Two. It elaborates on another topic.
+We had a subject called Computer Architecture and Operating Systems in college. And every Monday, we’d have the class for it. The instructor for it, we’ll call her Ms. P, was infamously strict. If you were in her class and talking to your neighbor, she’d pick you from the crowd and ask you to share details with the class. If you were even a few minutes late for her lecture, all hell broke loose, not only were you not allowed, but you’d also be insulted by her at the entrance for a few minutes. There was no room for error around her. Everything had to be sharp and precise, like her. She could decimate you with a single well-chosen phrase.
 
-            Third paragraph discussing further points.
+And then there was me, I was a headless chicken. Firstly, the subject was extremely confusing and stressful for me. And then I would be stressed about getting called out in class, which made me all the more stressed. There was this big weight hanging on my shoulders every time I tried to sit down and write assembly code, which made it impossible. I would try to calm my mind, start with the basics, have all my essentials down, have the algorithm cleanly written in the notebook, but towards the end it was a giant ugly dumpster, and I was in tears over how confusing it all was for me.
 
-            Finally, concluding thoughts on Essay Two.
+When I look back, I spent so many Sunday evenings during my college worrying about labs during the week. What a horrible time to be alive that was! Come Sunday evening and I would start hatching plans to get out of college the next day. I would check my forehead to see if a fever was coming up. The calendar to see when my menses next were. It was not a good way to live, but I really couldn't see any other option.
+
+This is how the labs went: the professor would explain the program in brief and some special hacks we’d need for this specific code in assembly and then leave us to it. And everyone else in the class knew exactly what to do. I even remember some people finishing it in 45 minutes instead of the 1/1.5 hours we got. And I would be in front of my laptop, trying to whip up something in assembly and failing and also frantically switching the tab to look at the time and also stealing furtive glances at the professor to make sure she wasn’t onto me and also trying to wipe off small tears from my cheeks when I realized I was crying. Sometimes she would come and check up on random students to see how we’d done. That was what filled me with cold panic the most. That she’d look at my monitor and find nothing but the headers for the program I was supposed to have finished.
+
+
+I was traveling back from a holiday last week and it was a gorgeous rainy evening. The trees on the highway around us were lush and fresh and the only thing visible beyond a few kilometers was dark gray fog hiding the western ghats. It was all breathtakingly beautiful. My father reminded me of a similar scene we had witnessed a few years back coming back home on a Sunday evening. I remembered that evening all too well. It was permanently lodged in my brain as one of my most anxious evenings. My mum was going to stay back, my father and I were coming back to Mumbai for work and college. The next day was a Monday afternoon, and I was, as usual, in panic. Even back in 2018, as I sat in the backseat of the car with my stomach up in panicked knots and my eyes glassy with tears, I felt a little bad on wasting this beautiful evening on anxiety. But it is what it is. Crying in pretty scenery has its own perks, like looking back at it and reminiscing.
+
+I don’t have specific memories from the next Monday in college, but I’m fairly certain it sucked. Just like the others before and after it. Every Monday afternoon for those 6 months I had a crying anxiety attack, except for some holidays when I must’ve gotten lucky. Some anxieties and mountains you never overcome.
+
+
         `,
     },{
         id: 5,
