@@ -1,0 +1,107 @@
+
+.App-header {
+  background-color: #ffde59;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  font-size: calc(10px + 2vmin);
+  color: #545454;
+  font-family: 'March', sans-serif;
+}
+
+.about
+{  font-family: 'League Spartan', sans-serif;
+  font-size: calc(10px + 2vmin);
+
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: flex-start; /* Start from the top */
+  font-size: calc(10px + 2vmin);
+  color: #545454;
+  font-family: 'March', sans-serif;
+  width: 100%; /* Make sure it takes full width */
+  max-width: 500px; /* Optional: limit the max width */
+  margin: 0 auto; /* Center the entire subscribe box */
+}
+
+.email {
+  display: flex; /* Use flexbox for internal alignment */
+  border: 2px solid lightgrey; /* Light grey border */
+  border-radius: 10px; /* Curved borders */
+  height: 40px; /* Height of input */
+  width: 100%; /* Take full width of the parent */
+  max-width: 460px; /* Limit max width */
+  font-size: 16px; /* Font size for better visibility */
+  background-color: white; /* White background */
+  align-items: center; /* Center text vertically */
+}
+
+.email input {
+  border: none; /* Remove border */
+  outline: none; /* Remove outline */
+  height: 100%; /* Fill the height */
+  width: 100%; /* Fill the width */
+  padding: 0 10px; /* Add some padding */
+  font-size: 16px; /* Match font size */
+}
+
+button {
+	display: flex;
+  flex-wrap: wrap; /* Allows wrapping */
+  justify-content: space-between; /* Space between boxes */
+  padding: 12px; /* Larger padding for button */
+  background-color: #ff40bd;
+  color: white;
+  border: none;
+  width: 160px; /* Button width */
+  border-radius: 14px;
+  font-size: 18px; /* Larger font for button */
+  cursor: pointer;
+  margin-top: 10px; /* Space between button and input */
+    align-text: center; /* Center items horizontally */
+
+}
+
+
+.box-container {
+   display: grid;
+  column-gap: 50px;
+  grid-template-columns: 370px 370px 370px;
+  padding: 10px;
+}
+
+.box {
+  background-color: white;
+  border: 1px solid #ccc; /* Add border for visibility */
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  flex: 0 1 calc(33.33% - 20px); /* 3 boxes per row */
+  margin: 10px; /* Space between boxes */
+  height: 100px; /* Set a fixed height for visibility */
+}
+
+
+@font-face {
+  font-family: 'League Spartan';
+  src: url('https://fonts.google.com/share?selection.family=League+Spartan:wght@100..900') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .box {
+    flex: 0 1 calc(50% - 10px); /* Two boxes per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .box {
+    flex: 0 1 100%; /* One box per row on very small screens */
+  }
+}

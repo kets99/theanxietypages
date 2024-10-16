@@ -1,0 +1,37 @@
+.navbar {
+  background-color: rgba(255, 255, 255, 0.82); /* White with 82% transparency */
+  padding: 1rem;
+  border-radius: 45px; /* Adjust as needed for curved edges */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+
+}
+
+body {
+  background-color: #ffde59;
+}
+
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar li a {
+  color: #ff40bd; /* Text color */
+    font-size: calc(8px + 2vmin);
+
+  font-family: 'March', sans-serif;
+}
+
+@font-face {
+  font-family: 'March';
+  src: url('./../fonts/March Clean.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.navbar li a:hover {
+  text-decoration: bold; /* Underline on hover */
+}
