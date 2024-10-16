@@ -67,12 +67,26 @@ button {
 
 }
 
-
 .box-container {
-   display: grid;
+  display: grid;
   column-gap: 50px;
-  grid-template-columns: 370px 370px 370px;
+  grid-template-columns: repeat(3, 370px); /* Default to 3 boxes per row */
   padding: 10px;
+}
+
+/* For tablets */
+@media (max-width: 900px) {
+  .box-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 boxes per row */
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 600px) {
+  .box-container {
+    grid-template-columns: 1fr; /* 1 box per row */
+    column-gap: 10px; /* Reduced gap for smaller screens */
+  }
 }
 
 .box {
@@ -81,10 +95,10 @@ button {
   border-radius: 15px;
   padding: 20px;
   text-align: center;
-  flex: 0 1 calc(33.33% - 20px); /* 3 boxes per row */
   margin: 10px; /* Space between boxes */
   height: 100px; /* Set a fixed height for visibility */
 }
+
 
 
 @font-face {
