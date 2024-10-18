@@ -39,7 +39,6 @@
   background-color: white; /* White background */
   align-items: center; /* Center text vertically */
 }
-
 .email input {
   border: none; /* Remove border */
   outline: none; /* Remove outline */
@@ -47,7 +46,9 @@
   width: 100%; /* Fill the width */
   padding: 0 10px; /* Add some padding */
   font-size: 16px; /* Match font size */
+  text-align: center; /* Center the placeholder text */
 }
+
 
 button {
   display: flex;
