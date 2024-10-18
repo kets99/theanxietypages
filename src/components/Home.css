@@ -24,17 +24,16 @@
   font-size: calc(10px + 2vmin);
   color: #545454;
   font-family: 'March', sans-serif;
-  width: 100%; /* Make sure it takes full width */
-  max-width: 500px; /* Optional: limit the max width */
+  width: 100%; /* Full width */
+  max-width: 500px; /* Limit the max width */
   margin: 0 auto; /* Center the entire subscribe box */
 }
-
 .email {
   display: flex; /* Use flexbox for internal alignment */
   border: 2px solid lightgrey; /* Light grey border */
   border-radius: 10px; /* Curved borders */
   height: 40px; /* Height of input */
-  width: 100%; /* Take full width of the parent */
+  width: 100%; /* Full width */
   max-width: 460px; /* Limit max width */
   font-size: 16px; /* Font size for better visibility */
   background-color: white; /* White background */
@@ -51,9 +50,9 @@
 }
 
 button {
-	display: flex;
-  flex-wrap: wrap; /* Allows wrapping */
-  justify-content: space-between; /* Space between boxes */
+  display: flex;
+  justify-content: center; /* Center button text */
+  align-items: center; /* Center vertically */
   padding: 12px; /* Larger padding for button */
   background-color: #ff40bd;
   color: white;
@@ -63,9 +62,15 @@ button {
   font-size: 18px; /* Larger font for button */
   cursor: pointer;
   margin-top: 10px; /* Space between button and input */
-    align-text: center; /* Center items horizontally */
-
+  transition: background-color 0.3s; /* Smooth color change */
 }
+
+button:active {
+  background-color: #d635a8; /* Change color on click */
+}
+
+
+
 
 .box-container {
   display: grid;
