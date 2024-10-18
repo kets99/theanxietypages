@@ -57,7 +57,7 @@ const Home = () => {
 					   })} />
 					 {errors.email && errors.email.message}
 				</div>
-			  <button class="button" type="submit">subscribe me!</button>
+			  <button class="button" type="submit">subscribe here!</button>
 		
 			</form>
 		</div>
