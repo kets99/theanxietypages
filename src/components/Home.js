@@ -46,7 +46,7 @@ const Home = () => {
 
 	      <div className="subscribe" style={{ padding: '20px' }}>
             <h3>about us</h3>
-            <p>an online space for anxious individuals to share <br/> their stories. <br/> i think there is great power in commiseration, <br/> just knowing that someone before you went through  the  <br/> same stuff and came out stronger the other side!</p>
+            <p>an online space for anxious individuals to share <br/> their stories. <br/> i think there is great power in commiseration, <br/> just knowing that someone before you went  <br/> through  the  same stuff and came out stronger the other side!</p>
 				<p>we're trying to compile stories and experiences  <br/> of people's struggle with anxiety. <br/> for submissions/questions, please write to us at ophelia2999@gmail.com </p>
 			
 			
