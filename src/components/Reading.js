@@ -19,6 +19,9 @@ console.log(">>");
   return (
   
   <>
+
+	  <div className="section-divider" style={{ margin: '20px 0', borderTop: '1px solid #ccc' }}></div>
+
     <div className="reading-container">
 	<header>
       <h1>{essay.title}</h1>
@@ -27,15 +30,18 @@ console.log(">>");
       <img src={essay.image} alt={essay.title} />
 	  </header>
 	  
-      <p>{essay.content}</p> {/* This is where you show the full content */}
-     
-       
-            
+    <div className="essay-content">
+    {essay.content.split('<!--p-->').map((paragraph, index) => (
+        <p key={index} className="essay-paragraph">{paragraph}</p>
+    ))}
+</div>
 
-            <footer>
+       
+		</div>
+
+	     <footer>
                 <p>© 2024 Your Website Name. All rights reserved.</p>
             </footer>
-		</div>
 		</>
     );
 };
