@@ -36,9 +36,10 @@ console.log(">>");
     ))}
 </div>
 
-       	  <div className="section-divider" style={{ margin: '20px 0', borderTop: '1px solid #ccc' }}></div>
 
 		</div>
+
+	       	  <div className="section-divider" style={{ margin: '20px 0', borderTop: '1px solid #ccc' }}></div>
 
 	     <footer>
                 <p>© 2024 Your Website Name. All rights reserved.</p>
