@@ -42,7 +42,7 @@ console.log(">>");
 	       	  <div className="section-divider" style={{ margin: '20px 0', borderTop: '1px solid #ccc' }}></div>
 
 	     <footer>
-                <p>© 2024 Your Website Name. All rights reserved.</p>
+                <p>© 2024 theanxietypages.com. All rights reserved.</p>
             </footer>
 		</>
     );
