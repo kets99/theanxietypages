@@ -70,6 +70,11 @@ const Home = () => {
 		
 			</form>
 		</div>
+
+					
+			  <footer>
+                <p>© 2024 theanxietypages.com. All rights reserved.</p>
+            </footer>
 		
 		</>
     );
