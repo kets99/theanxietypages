@@ -13,22 +13,18 @@ import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 const Home = () => {
 	
-	const form = useRef();
+ const { handleSubmit, register, formState: { errors } } = useForm();
 
-	 const sendEmail = (e) => {
-		e.preventDefault();
-
-		emailjs.sendForm('service_gnr854j', 'template_6z90njf', form.current, 'VtxnRH0Rc3OpgIdzj')
-		  .then((result) => {
-			  console.log(result.text);
-			  console.log("sent");
-		  }, (error) => {
-			  console.log(error.text);
-		  });
-	  };
-	  
-	const { handleSubmit, register, formState: { errors } } = useForm();
-	const onSubmit = values => alert(values.email);
+    const sendEmail = (data) => {
+        emailjs.send('service_gnr854j', 'template_6z90njf', {
+            user_email: data.user_email, // This must match the template placeholder
+        }, 'VtxnRH0Rc3OpgIdzj')
+        .then((result) => {
+            console.log("Email sent successfully!", result.text);
+        }, (error) => {
+            console.log("Error sending email: ", error.text);
+        });
+    };
 
     return (
        	  <>
@@ -63,24 +59,28 @@ const Home = () => {
 <div className="section-divider" style={{ margin: '20px 0', borderBottom: '1px solid #ccc' }}></div>
 
 				
-		<div className="subscribe">
-			<h3>subscribe to get new posts in your inbox</h3>
-			<form ref={form} onSubmit={sendEmail}>
-				  <div className="email">
-				  <input type="email" id="mail" name="user_email" placeholder="email address here" {...register("email", {
-						 required: "Required",
-						 pattern: {
-						   value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-						   message: "invalid email address"
-						 }
-					   })} />
-					 {errors.email && errors.email.message}
-				</div>
-			  <button class="button" type="submit">subscribe here!</button>
-		
-			</form>
-		</div>
-
+		   <div className="subscribe">
+                <h3>Subscribe to get new posts in your inbox</h3>
+                <form onSubmit={handleSubmit(sendEmail)}>
+                    <div className="email">
+                        <input
+                            type="email"
+                            id="mail"
+                            name="user_email" // This should match the email template variable
+                            placeholder="Email address here"
+                            {...register("user_email", {
+                                required: "Required",
+                                pattern: {
+                                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                                    message: "Invalid email address"
+                                }
+                            })}
+                        />
+                        {errors.user_email && <span>{errors.user_email.message}</span>}
+                    </div>
+                    <button className="button" type="submit">Send your message</button>
+                </form>
+            </div>
 					
 			  <footer>
                 <p>© 2024 theanxietypages.com. All rights reserved.</p>
