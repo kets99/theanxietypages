@@ -23,7 +23,6 @@ function App() {
                    <h1> the anxiety pages </h1>
 				   <h3>an online space to share and <br/> commiserate about our struggles <br/> with anxiety  </h3>
                 </header>
-                <Navbar />
 				<h2> </h2>
 
                 <Routes>
