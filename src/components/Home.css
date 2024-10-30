@@ -13,32 +13,13 @@
 .about
 {  font-family: 'March', sans-serif;
   font-size: calc(10px + 2vmin);
-
 }
 
-
-.subscribe {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center items horizontally */
-  justify-content: flex-start; /* Start from the top */
-  font-size: calc(10px + 2vmin);
-  color: #545454;
-  font-family: 'March', sans-serif;
-  width: 90%; /* Use a percentage for better responsiveness */
-  max-width: 500px; /* Limit the max width */
-  margin: 20px auto; /* Center and add margin */
-  padding: 20px; /* Add padding for better spacing */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
-  border-radius: 10px; /* Rounded corners */
-  background-color: white; /* Background color */
-}
 
 .email {
-  display: flex; /* Use flexbox for internal alignment */
+  display: flex;
   border: 2px solid lightgrey; /* Light grey border */
   border-radius: 10px; /* Curved borders */
-  height: 50px; /* Adjust height for better usability */
   width: 100%; /* Full width */
   margin-bottom: 10px; /* Space between email input and button */
 }
@@ -46,41 +27,44 @@
 .email input {
   border: none; /* Remove border */
   outline: none; /* Remove outline */
-  height: 100%; /* Fill the height */
+  height: 50px; /* Increased height for better touch targets */
   width: 100%; /* Fill the width */
-  padding: 0 10px; /* Add some padding */
+  padding: 0 15px; /* Add padding for comfort */
   font-size: 16px; /* Font size for better visibility */
-  text-align: left; /* Left align the placeholder text for better usability */
+  color: #333; /* Dark text color */
+  border-radius: 10px 0 0 10px; /* Rounded left corners */
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+}
+
+.email input::placeholder {
+  color: #aaa; /* Subdued placeholder color */
 }
 
 button {
-  display: flex;
-  justify-content: center; /* Center button text */
-  align-items: center; /* Center vertically */
-  padding: 12px; /* Larger padding for button */
-  background-color: #ff40bd;
-  color: white;
-  border: none;
   width: 100%; /* Full width for button */
-  max-width: 460px; /* Limit max width */
-  border-radius: 14px;
+  padding: 12px; /* Larger padding for button */
+  background-color: #ff40bd; /* Main color */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 0 10px 10px 0; /* Rounded right corners */
   font-size: 18px; /* Larger font for button */
-  cursor: pointer;
-  transition: background-color 0.3s; /* Smooth color change */
+  cursor: pointer; /* Pointer on hover */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+button:hover {
+  background-color: #d635a8; /* Change color on hover */
 }
 
 button:active {
-  background-color: #d635a8; /* Change color on click */
+  transform: scale(0.98); /* Slight shrink on click */
+  background-color: #b0288f; /* Darker color on click */
 }
 
 /* Responsive styles for mobile */
 @media (max-width: 600px) {
-  .subscribe {
-    padding: 15px; /* Less padding on small screens */
-  }
-
-  .email {
-    height: 50px; /* Keep input height */
+  .email input {
+    height: 45px; /* Adjust input height for smaller screens */
   }
 
   button {
@@ -88,7 +72,6 @@ button:active {
     font-size: 16px; /* Slightly smaller font size */
   }
 }
-
 
 
 .box-container {
