@@ -1,31 +1,46 @@
 .box {
-  background-color: #ffffff; /* White background */
-  border-radius: 20px; /* Curved corners */
+  background-color: #f8f9fa; /* Light grey background for a subtle look */
+  border-radius: 15px; /* Curved corners */
   padding: 20px; /* Padding around the content */
   text-align: center;
   flex: 0 1 calc(33.33% - 20px); /* 3 boxes per row */
   margin: 10px; /* Space between boxes */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for hover effect */
   overflow: hidden; /* Prevent overflow */
+  min-height: 200px; /* Set a minimum height for the box */
 }
 
 .box:hover {
   transform: translateY(-5px); /* Lift effect on hover */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
 }
 
 .box-image {
   width: 100%; /* Full width */
-  height: auto; /* Auto height to maintain aspect ratio */
-  border-radius: 15px; /* Rounded corners for the image */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 120px; /* Limit the height to keep a consistent size */
+  object-fit: cover; /* Cover the area without stretching */
+  border-radius: 10px; /* Rounded corners for the image */
   margin-bottom: 15px; /* Space between image and title */
 }
 
 .box-title {
-  font-size: 1.5rem; /* Larger font size for title */
-  color: #333; /* Darker color for better readability */
+  font-size: 1.25rem; /* Subdued font size */
+  color: #555; /* Dark grey for a softer look */
   margin: 0; /* Reset margin */
-  font-weight: 600; /* Bold title */
-  text-transform: uppercase; /* Uppercase for a modern touch */
+  font-weight: 500; /* Medium weight for a subdued appearance */
+  text-transform: none; /* Normal text casing */
+}
+
+/* Ensure no underline on links and inherit color */
+.box-title a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit color from parent */
+}
+
+/* Additional rule to target all links and remove underline globally */
+a {
+  text-decoration: none; /* Remove underline from all links */
+  color: inherit; /* Ensure they inherit color from parent */
 }
