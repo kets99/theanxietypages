@@ -20,7 +20,7 @@
   display: flex;
   border: 2px solid lightgrey; /* Light grey border */
   border-radius: 10px; /* Curved borders */
-  width: 100%; /* Full width */
+  width: 400px; /* Full width */
   margin-bottom: 10px; /* Space between email input and button */
 }
 
@@ -28,7 +28,7 @@
   border: none; /* Remove border */
   outline: none; /* Remove outline */
   height: 50px; /* Increased height for better touch targets */
-  width: 100%; /* Fill the width */
+  width: 400px; /* Fill the width */
   padding: 0 15px; /* Add padding for comfort */
   font-size: 16px; /* Font size for better visibility */
   color: #333; /* Dark text color */
