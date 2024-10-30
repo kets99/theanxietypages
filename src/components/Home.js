@@ -44,14 +44,17 @@ const Home = () => {
     </div>
 
 
-	      <div className="subscribe" style={{ padding: '20px' }}>
-            <h3>about us</h3>
-            <p>an online space for anxious individuals to share <br/> their stories. <br/> i think there is great power in commiseration, <br/> just knowing that someone before you went  <br/> through  the  same stuff and came out stronger the other side!</p>
-				<p>we're trying to compile stories and experiences  <br/> of people's struggle with anxiety. <br/> for submissions/questions, please write to us at ophelia2999@gmail.com </p>
-			
-			
-			</div>
-			
+<div className="about-section" style={{ padding: '20px', maxWidth: '600px', margin: 'auto', textAlign: 'center', backgroundColor: '#f9f9f9', borderRadius: '8px', boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)' }}>
+  <h3 style={{ fontSize: '24px', marginBottom: '15px', color: '#333' }}>About Us</h3>
+  <p style={{ lineHeight: '1.6', color: '#555' }}>
+    An online space for anxious individuals to share their stories. 
+    We believe there is great power in commiseration—just knowing that someone before you has gone through the same struggles and emerged stronger on the other side!
+  </p>
+  <p style={{ lineHeight: '1.6', color: '#555' }}>
+    We're compiling stories and experiences of people's struggles with anxiety. For submissions or questions, please write to us at <a href="mailto:ophelia2999@gmail.com" style={{ color: '#007BFF', textDecoration: 'none' }}>ophelia2999@gmail.com</a>.
+  </p>
+</div>
+
 				
 		<div className="subscribe">
 			<h3>subscribe to get new posts in your inbox</h3>
