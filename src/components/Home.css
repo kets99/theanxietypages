@@ -62,7 +62,7 @@ button:active {
 }
 
 /* Responsive styles for mobile */
-@media (max-width: 600px) {
+@media (max-width: 300px) {
   .email input {
     height: 45px; /* Adjust input height for smaller screens */
   }
