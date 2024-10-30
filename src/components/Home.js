@@ -44,6 +44,9 @@ const Home = () => {
     </div>
 
 
+<div className="section-divider" style={{ margin: '20px 0', borderTop: '1px solid #ccc' }}></div>
+
+
 <div className="about-section" style={{ padding: '20px', maxWidth: '600px', margin: 'auto', textAlign: 'center', backgroundColor: '#f9f9f9', borderRadius: '8px', boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)' }}>
   <h3 style={{ fontSize: '24px', marginBottom: '15px', color: '#333' }}>About Us</h3>
   <p style={{ lineHeight: '1.6', color: '#555' }}>
@@ -54,6 +57,9 @@ const Home = () => {
     We're compiling stories and experiences of people's struggles with anxiety. For submissions or questions, please write to us at <a href="mailto:ophelia2999@gmail.com" style={{ color: '#007BFF', textDecoration: 'none' }}>ophelia2999@gmail.com</a>.
   </p>
 </div>
+
+
+<div className="section-divider" style={{ margin: '20px 0', borderBottom: '1px solid #ccc' }}></div>
 
 				
 		<div className="subscribe">
