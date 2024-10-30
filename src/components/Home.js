@@ -39,7 +39,7 @@ const Home = () => {
             <div className="section-divider" style={{ margin: '20px 0', borderTop: '1px solid #ccc' }}></div>
 
             <div className="about-section" style={{ padding: '10px', maxWidth: '600px', margin: 'auto', textAlign: 'center', backgroundColor: '#f9f9f9', borderRadius: '8px', boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)' }}>
-                <h3 style={{ fontSize: '24px', marginBottom: '15px', color: '#333' }}>About Us</h3>
+                <h3 style={{ fontSize: '24px', marginBottom: '15px', color: '#333' }}>about us</h3>
                 <p style={{ lineHeight: '1.6', color: '#555' }}>
                     An online space for anxious individuals to share their stories. 
                     We believe there is great power in commiseration—just knowing that someone before you has gone through the same struggles and emerged stronger on the other side!
