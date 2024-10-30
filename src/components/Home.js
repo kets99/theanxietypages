@@ -60,3 +60,26 @@ const Home = () => {
                             id="mail"
                             name="user_email"
                             placeholder="Email address here"
+                            {...register("user_email", {
+                                required: "Required",
+                                pattern: {
+                                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                                    message: "Invalid email address"
+                                }
+                            })}
+                        />
+                        {errors.user_email && <span>{errors.user_email.message}</span>}
+                    </div>
+                    <button className="button" type="submit">Send your message</button>
+                </form>
+                {feedbackMessage && <div className="feedback">{feedbackMessage}</div>}
+            </div>
+
+            <footer>
+                <p>© 2024 theanxietypages.com. All rights reserved.</p>
+            </footer>
+        </>
+    );
+};
+
+export default Home;
