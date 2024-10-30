@@ -1,10 +1,8 @@
-/* Reading.css */
-
 .reading-container {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: white;
+    background-color: #f5f5f5; /* Lighter background */
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -27,6 +25,10 @@ header {
 .essay-content {
     line-height: 1.6;
     margin-bottom: 40px;
+}
+
+.essay-paragraph {
+    margin-bottom: 20px; /* Add space between paragraphs */
 }
 
 footer {
